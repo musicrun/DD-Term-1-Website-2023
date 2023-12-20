@@ -1,0 +1,342 @@
+<!DOCTYPE >
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        overflow-x: hidden;
+        background-color: #f7f1f3;
+      }
+
+      a:link,
+      a:visited,
+      a:hover,
+      a:active::after {
+        text-decoration: none;
+      }
+      a:link,
+      a:visited,
+      a:hover,
+      a:active {
+        text-decoration: none;
+      }
+      a:link,
+      a:visited,
+      a:hover,
+      a:active::before {
+        text-decoration: none;
+      }
+
+      header {
+        z-index: 100;
+      }
+
+      h1 {
+        font-size: 4.5rem;
+        color: white;
+      }
+
+      .container {
+        max-width: 1442px;
+      }
+
+      #banner {
+        height: 60vh;
+        width: 100vw;
+        z-index: 2;
+      }
+      #banner_image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      header {
+        position: absolute;
+        top: 0;
+        padding: 1.5rem;
+      }
+      #header_image {
+        height: auto;
+        width: 200px;
+        object-fit: cover;
+        border-width: 1px;
+        border-color: black;
+      }
+      #banner_content_body {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 60vh;
+        width: 100vw;
+        z-index: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .primary_color {
+        color: #7ec392;
+      }
+
+      .wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .two_by_two {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .left_section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .right_section {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-left: 50px;
+      }
+      @media screen and (max-width: 1024px) {
+      }
+    </style>
+  </head>
+  <body>
+    <div id="banner">
+      <header>
+        <a href="../index.html">
+          <img id="header_image" src="../assets/logo.png" alt="banner" />
+        </a>
+      </header>
+      <div id="banner_content_body">
+        <div id="banner_content">
+          <h1 class="text-center">FAQ</h1>
+        </div>
+      </div>
+      <img id="banner_image" src="../assets/faq/banner.png" alt="banner" />
+    </div>
+    <div class="wrapper">
+      <section id="paragragh_section" class="container">
+        <div class="details">
+          <img src="../assets/faq/icon.png" class="icon" />
+          <h2 class="contact_title">
+            Welcome to our website dedicated to Japan!
+          </h2>
+        </div>
+        <div class="description">
+          We've compiled some answers to common questions to help you navigate
+          and make the most of your Japan-related experience. If you have any
+          other inquiries not covered here, feel free to contact us. We're here
+          to assist you in your journey of discovering the beauty and culture of
+          Japan.
+        </div>
+        <h2 class="faq_title">
+          These are just a few of the common questions travelers have when
+          planning a trip to Japan.
+        </h2>
+        <div class="point">
+          <div class="question">
+            <h2 class="question_title">
+              What is the best time to visit Japan?
+            </h2>
+            <div class="point_description">
+              The ideal time to visit Japan largely depends on your preferences.
+              Spring (March to May) offers cherry blossoms and pleasant weather,
+              while autumn (September to November) is known for its colorful
+              foliage. If you enjoy winter sports, December to February is
+              perfect for skiing and snowboarding.
+            </div>
+          </div>
+          <div class="question_image">
+            <img src="../assets/faq/point_1.png" class="image" />
+          </div>
+        </div>
+        <div class="point">
+          <div class="question_image_2">
+            <img src="../assets/faq/point_2.png" class="image" />
+          </div>
+          <div class="question">
+            <h2 class="question_title">Do I need a visa to visit Japan?</h2>
+            <div class="point_description">
+              The visa requirements vary depending on your nationality and the
+              purpose of your visit. Many countries have visa exemptions for
+              short-term tourism. To check if you need a visa, visit the
+              official website of the Japanese embassy or consulate in your
+              country.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <style>
+        .point {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          background-color: #ecfff1;
+          padding: 3rem;
+          border-radius: 2rem;
+          margin-top: 5rem;
+        }
+        .question {
+          width: 45%;
+        }
+        .question_title {
+          color: #7ec392;
+          font-size: 1.8rem;
+        }
+        .question_image {
+          width: 50%;
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+        }
+        .question_image_2 {
+          width: 50%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+        }
+        .image {
+          width: 90%;
+        }
+        .faq_title {
+          font-size: 35px;
+          color: #7ec392;
+          font-weight: 500;
+          text-align: center;
+          margin-top: 5rem;
+        }
+        .contact-div_contain {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          margin-top: 5rem;
+        }
+        .icon {
+          width: 5rem;
+          height: 5rem;
+        }
+        .contact-div-text {
+          font-size: 25px;
+          font-weight: 300;
+        }
+        .contact_title {
+          color: #7ec392;
+          font-size: 45px;
+        }
+        .find {
+          margin-top: 5rem;
+        }
+        .details {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          margin-top: 5rem;
+        }
+        .description {
+          text-align: center;
+          font-size: 1.8rem;
+          line-height: 40px;
+          font-weight: 300;
+        }
+        .point_description {
+          font-size: 1.8rem;
+          line-height: 40px;
+          font-weight: 300;
+        }
+        .icon_image {
+          width: 2.5rem;
+          height: 2.5rem;
+          margin-right: 1rem;
+        }
+        .contact-div {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-right: 5rem;
+        }
+      </style>
+    </div>
+    <section class="footer">
+      <div class="links">
+        <a href="../pages/about.html"><h2 class="link">About Us</h2></a>
+        <a href="../pages/faq.html"> <h2 class="link">FAQ</h2></a>
+        <a href="../pages/contact.html"><h2 class="link">Contact Us</h2></a>
+      </div>
+      <div class="social">
+        <a href="https://www.instagram.com/" target="_blank">
+  <img class="icon" src="../assets/instgarm.png" alt="Instagram Icon">
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+  <img class="icon" src="../assets/youtube.png" alt="YouTube Icon">
+        </a>
+
+        <a href="https://www.facebook.com/" target="_blank">
+  <img class="icon" src="../assets/facebook.png" alt="Facebook Icon">
+        </a>
+        <h3 class="rights">2023, All rights reserved.</h3>
+      </div>
+
+      <style>
+        .footer {
+          background-image: url("../assets/footer.png");
+          height: 450px;
+          margin-top: 200px;
+          background-position: bottom left;
+          background-repeat: no-repeat;
+          background-size: cover;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding-left: 100px;
+          padding-top: 60px;
+          padding-bottom: 60px;
+        }
+        .links {
+          display: flex;
+          flex-direction: row;
+        }
+        .link {
+          font-size: 35px;
+          color: #7ec392;
+          margin-right: 40px;
+        }
+        .icon {
+          height: 2.5rem;
+          width: auto;
+          object-fit: contain;
+          margin-right: 40px;
+        }
+        .rights {
+          color: white;
+          margin-left: 27%;
+        }
+        .social {
+          display: flex;
+          flex-direction: row;
+        }
+      </style>
+    </section>
+  </body>
+</html>

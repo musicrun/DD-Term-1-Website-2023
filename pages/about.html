@@ -1,0 +1,284 @@
+<!DOCTYPE >
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        overflow-x: hidden;
+        background-color: #f7f1f3;
+      }
+
+      a:link,
+      a:visited,
+      a:hover,
+      a:active::after {
+        text-decoration: none;
+      }
+      a:link,
+      a:visited,
+      a:hover,
+      a:active {
+        text-decoration: none;
+      }
+      a:link,
+      a:visited,
+      a:hover,
+      a:active::before {
+        text-decoration: none;
+      }
+
+      header {
+        z-index: 100;
+      }
+
+      h1 {
+        font-size: 4.5rem;
+        color: white;
+      }
+
+      .container {
+        max-width: 1442px;
+      }
+
+      #banner {
+        height: 60vh;
+        width: 100vw;
+        z-index: 2;
+      }
+      #banner_image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      header {
+        position: absolute;
+        top: 0;
+        padding: 1.5rem;
+      }
+      #header_image {
+        height: auto;
+        width: 200px;
+        object-fit: cover;
+        border-width: 1px;
+        border-color: black;
+      }
+      #banner_content_body {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 60vh;
+        width: 100vw;
+        z-index: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .primary_color {
+        color: #7ec392;
+      }
+
+      .wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .two_by_two {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .left_section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .right_section {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-left: 50px;
+      }
+      @media screen and (max-width: 1024px) {
+      }
+    </style>
+  </head>
+  <body>
+    <div id="banner">
+      <header>
+        <a href="../index.html">
+          <img id="header_image" src="../assets/logo.png" alt="banner" />
+        </a>
+      </header>
+      <div id="banner_content_body">
+        <div id="banner_content">
+          <h1 class="text-center">About Us</h1>
+        </div>
+      </div>
+      <img id="banner_image" src="../assets/contact/banner.png" alt="banner" />
+    </div>
+
+    <section class="banner_2">
+      <img src="../assets/about/mountain.png" class="image" />
+      <style>
+        .image {
+          width: 80vw;
+          max-width: 1442px;
+        }
+        .banner_2 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 150px;
+        }
+      </style>
+    </section>
+    <div class="wrapper">
+      <section id="paragragh_section" class="container two_by_two">
+        <div class="about_section">
+          <h2 class="section_title primary_color about_title">
+            Welcome to our website dedicated to Japan!
+          </h2>
+          <div class="section_description">
+            At JapanJo.com, we are passionate about sharing the rich tapestry of
+            Japanese culture, history, and lifestyle with the world. Our journey
+            began with a profound love for Japan and a desire to create a
+            platform that serves as a treasure trove of information and
+            inspiration for Japan enthusiasts.
+          </div>
+          <h2 class="primary_color subtitle">Our Mission:</h2>
+          <div class="section_description">
+            Our mission is to be your go-to resource for all things Japan. We
+            strive to provide accurate, engaging, and insightful content that
+            caters to both seasoned Japanophiles and first-time visitors.
+            Whether you're planning a trip, interested in Japanese arts and
+            traditions, or simply captivated by the beauty of this incredible
+            country, we're here to be your trusted companion.
+          </div>
+          <h2 class="primary_color subtitle">Our Story:</h2>
+          <div class="section_description">
+            Founded in 2023 by student Saif AlNaimat an avid Japan lover,
+            DiscoverJapan.com started as a humble website chronicling personal
+            journeys through the Land of the Rising Sun. Over the years, our
+            platform has evolved into a comprehensive guide, offering a wealth
+            of articles, travel tips, cultural insights, and resources about
+            Japan.
+          </div>
+          <h2 class="primary_color subtitle">Join Us on this Journey:</h2>
+          <div class="section_description">
+            We invite you to embark on this exciting journey of discovery with
+            us. Whether you're planning your first trip to Japan or looking to
+            deepen your understanding of this remarkable culture, we're here to
+            be your trusted companion. Thank you for choosing DiscoverJapan.com!
+          </div>
+        </div>
+        <style>
+          .about_section {
+            /* align-items: cenetr; 
+            justify-content: center;
+            display: flex;
+            flex-direction: column; */
+          }
+          .subtitle {
+            margin-top: 5rem;
+            font-size: 1.6rem;
+          }
+          .section_description {
+            text-align: justify;
+            font-size: 1.6rem;
+            line-height: 40px;
+          }
+          .about_title {
+            text-align: center;
+          }
+          #paragragh_section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 5rem;
+          }
+          .section_title {
+            font-size: 2.9rem;
+          }
+        </style>
+      </section>
+    </div>
+    <section class="footer">
+      <div class="links">
+        <a href="../pages/about.html"><h2 class="link">About Us</h2></a>
+        <a href="../pages/faq.html"> <h2 class="link">FAQ</h2></a>
+        <a href="../pages/contact.html"><h2 class="link">Contact Us</h2></a>
+      </div>
+      <div class="social">
+       <a href="https://www.instagram.com/" target="_blank">
+  <img class="icon" src="../assets/instgarm.png" alt="Instagram Icon">
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+  <img class="icon" src="../assets/youtube.png" alt="YouTube Icon">
+        </a>
+
+        <a href="https://www.facebook.com/" target="_blank">
+  <img class="icon" src="../assets/facebook.png" alt="Facebook Icon">
+        </a>
+        <h3 class="rights">2023, All rights reserved.</h3>
+      </div>
+
+      <style>
+        .footer {
+          background-image: url("../assets/footer.png");
+          height: 450px;
+          margin-top: 200px;
+          background-position: bottom left;
+          background-repeat: no-repeat;
+          background-size: cover;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding-left: 100px;
+          padding-top: 60px;
+          padding-bottom: 60px;
+        }
+        .links {
+          display: flex;
+          flex-direction: row;
+        }
+        .link {
+          font-size: 35px;
+          color: #7ec392;
+          margin-right: 40px;
+        }
+        .icon {
+          height: 2.5rem;
+          width: auto;
+          object-fit: contain;
+          margin-right: 40px;
+        }
+        .rights {
+          color: white;
+          margin-left: 27%;
+        }
+        .social {
+          display: flex;
+          flex-direction: row;
+        }
+      </style>
+    </section>
+  </body>
+</html>

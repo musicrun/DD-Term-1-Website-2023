@@ -1,0 +1,405 @@
+<!DOCTYPE >
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        overflow-x: hidden;
+        background-color: #f7f1f3;
+      }
+
+      a:link,
+      a:visited,
+      a:hover,
+      a:active::after {
+        text-decoration: none;
+      }
+      a:link,
+      a:visited,
+      a:hover,
+      a:active {
+        text-decoration: none;
+      }
+      a:link,
+      a:visited,
+      a:hover,
+      a:active::before {
+        text-decoration: none;
+      }
+
+      header {
+        z-index: 100;
+      }
+
+      h1 {
+        font-size: 4.5rem;
+        color: white;
+      }
+
+      .container {
+        max-width: 1442px;
+      }
+
+      #banner {
+        height: 60vh;
+        width: 100vw;
+        z-index: 2;
+      }
+      #banner_image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      header {
+        position: absolute;
+        top: 0;
+        padding: 1.5rem;
+      }
+      .center {
+        text-align: center;
+        margin-top: 10rem;
+      }
+      #header_image {
+        height: auto;
+        width: 200px;
+        object-fit: cover;
+        border-width: 1px;
+        border-color: black;
+      }
+      #banner_content_body {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 60vh;
+        width: 100vw;
+        z-index: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .primary_color {
+        color: #7ec392;
+      }
+
+      .wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .two_by_two {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .left_section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .right_section {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-left: 50px;
+      }
+      @media screen and (max-width: 1024px) {
+      }
+    </style>
+  </head>
+  <body>
+    <div id="banner">
+      <header>
+        <a href="../index.html">
+          <img id="header_image" src="../assets/logo.png" alt="banner" />
+        </a>
+      </header>
+      <div id="banner_content_body">
+        <div id="banner_content">
+          <h1 class="text-center">Language & Communication <br /></h1>
+        </div>
+      </div>
+      <img id="banner_image" src="../assets/language/banner.png" alt="banner" />
+    </div>
+
+    <section id="highlights_section">
+      <div id="highlight_item">
+        <h3 id="highlight_value" class="primary_color">Word of the Day</h3>
+      </div>
+      <div id="highlight_item_2">
+        <h3
+          id="highlight_value_2"
+          style="
+            line-height: 40px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+          "
+        >
+          <span style="padding-right: 5rem; font-weight: 500">
+            Living Room
+          </span>
+          <div>
+            リビングルーム <br />
+            Ribingurūmu
+          </div>
+        </h3>
+      </div>
+      <style>
+        #highlights_section {
+          margin-top: -5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        #highlight_item {
+          height: 10rem;
+          background-color: #f7f1f3;
+          width: 25vw;
+          min-width: 19rem;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border-radius: 25px;
+        }
+        #highlight_item_2 {
+          height: 10rem;
+          background-color: #f7f1f3;
+          width: 40vw;
+          min-width: 19rem;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border-radius: 25px;
+          margin-left: 5rem;
+        }
+        #highlight_value {
+          line-height: 0;
+          font-size: 2.5rem;
+          font-weight: 600;
+        }
+        #highlight_value_2 {
+          line-height: 1;
+          font-size: 2rem;
+          font-weight: 300;
+          text-align: center;
+        }
+      </style>
+    </section>
+
+    <div class="wrapper">
+      <section id="paragragh_section" class="container two_by_two">
+        <div class="left_section">
+          <h2 class="section_title primary_color">Japanese Language</h2>
+          <div class="section_description">
+            The Japanese language is a rich tapestry woven with intricate
+            characters, distinct phonetics, and layers of cultural nuance. It
+            employs three writing scripts: kanji, which are Chinese characters
+            adapted to Japanese; hiragana, a phonetic script representing native
+            Japanese words; and katakana, used primarily for foreign words and
+            names. Politeness and honorifics play a pivotal role, shaping social
+            interactions. The language's structure, characterized by
+            subject-object-verb order, offers a unique perspective on expressing
+            thoughts. Homonyms and context are crucial for interpretation.
+            Furthermore, the language is an integral part of Japanese culture,
+            reflecting its deep-rooted traditions and values. Learning Japanese
+            is an immersive journey into the heart of a society known for its
+            precision, subtlety, and profound respect for communication.
+          </div>
+        </div>
+        <style>
+          .section_description {
+            text-align: justify;
+            font-size: 1.8rem;
+            line-height: 40px;
+          }
+          #paragragh_section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 5rem;
+          }
+          .section_title {
+            font-size: 2.9rem;
+          }
+        </style>
+      </section>
+    </div>
+
+    <div class="wrapper">
+      <div id="learning_section" class="point container">
+        <h2 style="font-size: 2.5rem" class="primary_color">
+          Learn Japanese Alphabets and basic phrases easily with MochiKana
+        </h2>
+        <p style="font-size: 2rem">
+          Let's start learning the very first Hiragana!
+        </p>
+
+        <img id="girl_learning" src="../assets/language/girl_learning.png" />
+
+        <p style="font-size: 2rem">
+          "Hiragana, one of Japan's essential writing systems, represents native
+          Japanese words with graceful, flowing characters."
+        </p>
+
+        <div id="button_container">
+          <div id="back_button" class="button disabled">Back</div>
+          <div id="next_button" class="button">Next</div>
+        </div>
+        <style>
+          .button {
+            padding: 2rem;
+            padding-left: 6rem;
+            padding-right: 6rem;
+            background-color: #7ec392;
+            border-radius: 10px;
+            margin-right: 2rem;
+            margin-left: 2rem;
+            color: white;
+            font-weight: 600;
+          }
+          .disabled {
+            background-color: #f7f1f3 !important;
+            color: #cccccc !important;
+          }
+          #button_container {
+            margin-top: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          #learning_section {
+            margin-top: 5rem;
+          }
+          #girl_learning {
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+          }
+          .point {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #ecfff1;
+            padding: 4rem;
+            border-radius: 2rem;
+            align-items: center;
+          }
+        </style>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="point container" id="register_div">
+        <h2 style="font-size: 2.5rem" class="primary_color">Free Courses</h2>
+        <p style="font-size: 2rem; margin-top: 1.3rem">
+          Novemeber 10 - November 30
+        </p>
+        <p style="font-size: 2rem; margin-top: 1.3rem">
+          "A Japanese course offering language and culture immersion. Learn
+          writing, grammar, and conversation, delving into Japan's rich society
+          and traditions."
+        </p>
+        <div id="back_button" style="margin-top: 2rem" class="button">
+          <a href="https://www.facebook.com/jaajnihongo/" target="_blank" rel="noopener noreferrer" style="display: block; text-decoration: none; color: inherit; padding: inherit;">
+          Register
+        </div>
+      </div>
+      <style>
+        #register_div {
+          margin-top: 5rem;
+        }
+
+        .point {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          background-color: #ecfff1;
+          padding: 4rem;
+          border-radius: 2rem;
+          align-items: center;
+        }
+      </style>
+    </div>
+
+    <section class="footer">
+      <div class="links">
+        <a href="../pages/about.html"><h2 class="link">About Us</h2></a>
+        <a href="../pages/faq.html"> <h2 class="link">FAQ</h2></a>
+        <a href="../pages/contact.html"><h2 class="link">Contact Us</h2></a>
+      </div>
+      <div class="social">
+        <a href="https://www.instagram.com/" target="_blank">
+  <img class="icon" src="../assets/instgarm.png" alt="Instagram Icon">
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+  <img class="icon" src="../assets/youtube.png" alt="YouTube Icon">
+        </a>
+
+        <a href="https://www.facebook.com/" target="_blank">
+  <img class="icon" src="../assets/facebook.png" alt="Facebook Icon">
+        </a>
+        <h3 class="rights">2023, All rights reserved.</h3>
+      </div>
+      <style>
+        .footer {
+          background-image: url("../assets/footer.png");
+          height: 450px;
+          margin-top: 200px;
+          background-position: bottom left;
+          background-repeat: no-repeat;
+          background-size: cover;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding-left: 100px;
+          padding-top: 60px;
+          padding-bottom: 60px;
+        }
+        .links {
+          display: flex;
+          flex-direction: row;
+        }
+        .link {
+          font-size: 35px;
+          color: #7ec392;
+          margin-right: 40px;
+        }
+        .icon {
+          height: 2.5rem;
+          width: auto;
+          object-fit: contain;
+          margin-right: 40px;
+        }
+        .rights {
+          color: white;
+          margin-left: 27%;
+        }
+        .social {
+          display: flex;
+          flex-direction: row;
+        }
+      </style>
+    </section>
+  </body>
+</html>

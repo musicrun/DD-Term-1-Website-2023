@@ -1,0 +1,377 @@
+<!DOCTYPE >
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        overflow-x: hidden;
+        background-color: #f7f1f3;
+      }
+
+      a:link,
+      a:visited,
+      a:hover,
+      a:active::after {
+        text-decoration: none;
+      }
+      a:link,
+      a:visited,
+      a:hover,
+      a:active {
+        text-decoration: none;
+      }
+      a:link,
+      a:visited,
+      a:hover,
+      a:active::before {
+        text-decoration: none;
+      }
+
+      header {
+        z-index: 100;
+      }
+
+      h1 {
+        font-size: 4.5rem;
+        color: white;
+      }
+
+      .container {
+        max-width: 1442px;
+      }
+
+      #banner {
+        height: 100vh;
+        width: 100vw;
+        z-index: 2;
+      }
+      #banner_image {
+        height: 100%;
+        width: 100%;
+      }
+      header {
+        position: absolute;
+        top: 0;
+        padding: 1.5rem;
+      }
+      #header_image {
+        height: auto;
+        width: 200px;
+        object-fit: cover;
+        border-width: 1px;
+        border-color: black;
+        object-fit: cover;
+      }
+      #banner_content_body {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        z-index: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .primary_color {
+        color: #7ec392;
+      }
+
+      .wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .two_by_two {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .left_section {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+      }
+      .right_section {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-left: 50px;
+      }
+      @media screen and (max-width: 1024px) {
+      }
+    </style>
+  </head>
+  <body>
+    <div id="banner">
+      <header>
+        <a href="./index.html">
+          <img id="header_image" src="./assets/logo.png" alt="banner" />
+        </a>
+      </header>
+
+      <div id="banner_content_body">
+        <div id="banner_content">
+          <h1 class="text-center">
+            Extraordinary nature, <br />
+            and cultural charm
+          </h1>
+        </div>
+      </div>
+      <img id="banner_image" src="./assets/home/banner.png" alt="banner" />
+    </div>
+
+    <section id="highlights_section">
+      <div id="highlight_item">
+        <h3 id="highlight_value" class="primary_color">125.7 M</h3>
+        <p id="highlight_title">Population</p>
+      </div>
+      <div id="highlight_item">
+        <h3 id="highlight_value" class="primary_color">377.9 km²</h3>
+        <p id="highlight_title">Land Area</p>
+      </div>
+      <div id="highlight_item">
+        <h3 id="highlight_value" class="primary_color">47</h3>
+        <p id="highlight_title">Prefectures</p>
+      </div>
+      <style>
+        header {
+          z-index: 100;
+        }
+        #highlights_section {
+          margin-top: -5rem;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        }
+        #highlight_item {
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          background-color: #f7f1f3;
+          width: 20vw;
+          min-width: 19rem;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border-radius: 25px;
+        }
+        #highlight_value {
+          line-height: 0;
+          font-size: 2.5rem;
+          font-weight: 600;
+        }
+      </style>
+    </section>
+    <div class="wrapper">
+      <section id="paragragh_section" class="container two_by_two">
+        <div class="left_section">
+          <h2 class="section_title primary_color">
+            Where Ancient Traditions and <br />
+            Modern Marvels Unite
+          </h2>
+          <div class="section_description">
+            Japan's tourism sector is a shining example of a country that
+            skillfully blends the most recent modern technology with its deeply
+            ingrained traditions, making it a popular travel destination for
+            people all over the world. There are many different sights in the
+            Land of the Rising Sun that make an unforgettable impression on
+            tourists.
+            <br />
+            <br />
+            Shinjuku's glittering skyscrapers and Asakusa's old Senso-ji Temple
+            live in harmony in Tokyo, the dynamic city that never sleeps. But
+            Kyoto, with its centuries-old temples and shrines, is a live example
+            of Japan's rich cultural legacy, taking you back in time.
+          </div>
+        </div>
+        <div class="right_section">
+          <!-- <img src="./assets/home/paragragh_image.png" class="right-image" /> -->
+          <video class="right-video" src="./assets/test.video.mp4" controls />
+        </div>
+        <style>
+          .section_description {
+            text-align: justify;
+            font-size: 1.5rem;
+            padding-right: 50px;
+            line-height: 1.9rem;
+          }
+          #paragragh_section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 10rem;
+          }
+          .section_title {
+            font-size: 2.9rem;
+          }
+          .right-video {
+            border-radius: 10px;
+            height: 38rem;
+            width: 38rem;
+            object-fit: cover;
+            /* padding-top: 180px; */
+          }
+        </style>
+      </section>
+    </div>
+    <div class="wrapper">
+      <section id="paragragh_section" class="container two_by_two">
+        <div class="images">
+          <div class="first">
+            <a href="./pages/culture.html">
+              <img src="./assets/home/home-1.png" class="all_image" />
+              <p class="title">Japanese Culture and Traditions</p>
+            </a>
+          </div>
+
+          <div class="all ">
+            <a href="./pages/travel.html">
+              <img src="./assets/home/home-2.png" class="all_image" />
+              <p class="title">Travel Tips</p>
+            </a>
+          </div>
+
+          <div class="all some-images">
+            <a href="./pages/cuisine.html">
+              <img src="./assets/home/home-3.png" class="all_image" />
+              <p class="title">Japanese Cuisine</p>
+            </a>
+          </div>
+
+          <div class="all some-images">
+            <a href="./pages/language.html">
+              <img src="./assets/home/home-4.png" class="all_image" />
+              <p class="title">Language and Communication</p>
+            </a>
+          </div>
+
+          <div class="all some-images">
+            <a href="./pages/further.html">
+              <img src="./assets/home/home-5.png" class="all_image" />
+              <p class="title">Further Resources</p>
+            </a>
+          </div>
+        </div>
+        <style>
+          #paragragh_section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 5rem;
+          }
+          .title {
+            color: white;
+            position: absolute;
+            bottom: 0;
+            font-weight: 600;
+            font-size: 40px;
+            padding-left: 3rem;
+          }
+          .first {
+            width: 66%;
+            position: relative;
+          }
+          .all_image {
+            width: 100%;
+          }
+          .all {
+            position: relative;
+            width: 32%;
+          }
+          .some-images {
+            padding-top: 25px;
+          }
+          .images {
+            flex-wrap: wrap;
+            flex-direction: row;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            margin-top: 100px;
+          }
+        </style>
+      </section>
+    </div>
+    <section class="footer">
+      <div class="links">
+        <a href="./pages/about.html"><h2 class="link">About Us</h2></a>
+        <a href="./pages/faq.html"> <h2 class="link">FAQ</h2></a>
+        <a href="./pages/contact.html"><h2 class="link">Contact Us</h2></a>
+      </div>
+      <div class="social">
+        <a href="https://www.instagram.com/" target="_blank">
+  <img class="icon" src="./assets/instgarm.png" alt="Instagram Icon">
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+  <img class="icon" src="./assets/youtube.png" alt="YouTube Icon">
+        </a>
+
+        <a href="https://www.facebook.com/" target="_blank">
+  <img class="icon" src="./assets/facebook.png" alt="Facebook Icon">
+        </a>
+
+        <h3 class="rights">2023, All rights reserved.</h3>
+      </div>
+
+      <style>
+        .footer {
+          background-image: url("./assets/footer.png");
+          height: 450px;
+          margin-top: 200px;
+          background-position: bottom left;
+          background-repeat: no-repeat;
+          background-size: cover;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding-left: 100px;
+          padding-top: 60px;
+          padding-bottom: 60px;
+        }
+        .links {
+          display: flex;
+          flex-direction: row;
+        }
+        .link {
+          font-size: 35px;
+          color: #7ec392;
+          margin-right: 40px;
+        }
+        .icon {
+          height: 2.5rem;
+          width: auto;
+          object-fit: contain;
+          margin-right: 40px;
+        }
+        .rights {
+          color: white;
+          margin-left: 30%;
+        }
+        .social {
+          display: flex;
+          flex-direction: row;
+        }
+      </style>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,676 @@
+<!DOCTYPE >
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        overflow-x: hidden;
+        background-color: #f7f1f3;
+      }
+
+      a:link,
+      a:visited,
+      a:hover,
+      a:active::after {
+        text-decoration: none;
+      }
+      a:link,
+      a:visited,
+      a:hover,
+      a:active {
+        text-decoration: none;
+      }
+      a:link,
+      a:visited,
+      a:hover,
+      a:active::before {
+        text-decoration: none;
+      }
+
+      header {
+        z-index: 100;
+      }
+
+      h1 {
+        font-size: 4.5rem;
+        color: white;
+      }
+
+      .container {
+        max-width: 1442px;
+      }
+
+      #banner {
+        height: 60vh;
+        width: 100vw;
+        z-index: 2;
+      }
+      #banner_image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      header {
+        position: absolute;
+        top: 0;
+        padding: 1.5rem;
+      }
+      .center {
+        text-align: center;
+        margin-top: 10rem;
+      }
+      #header_image {
+        height: auto;
+        width: 200px;
+        object-fit: cover;
+        border-width: 1px;
+        border-color: black;
+      }
+      #banner_content_body {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 60vh;
+        width: 100vw;
+        z-index: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .primary_color {
+        color: #7ec392;
+      }
+
+      .wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .two_by_two {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .left_section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .right_section {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-left: 50px;
+      }
+      @media screen and (max-width: 1024px) {
+      }
+    </style>
+  </head>
+  <body>
+    <div id="banner">
+      <header>
+        <a href="../index.html">
+          <img id="header_image" src="../assets/logo.png" alt="banner" />
+        </a>
+      </header>
+      <div id="banner_content_body">
+        <div id="banner_content">
+          <h1 class="text-center">Japanese Cuisine <br /></h1>
+        </div>
+      </div>
+      <img id="banner_image" src="../assets/cuisine/banner.png" alt="banner" />
+    </div>
+
+    <section id="highlights_section">
+      <div id="highlight_item">
+        <h3 id="highlight_value" class="primary_color">Did you know?</h3>
+      </div>
+      <div id="highlight_item_2">
+        <h3 id="highlight_value_2">It’s good manners to slurp your noodles</h3>
+      </div>
+      <style>
+        #highlights_section {
+          margin-top: -5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        #highlight_item {
+          height: 10rem;
+          background-color: #f7f1f3;
+          width: 25vw;
+          min-width: 19rem;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border-radius: 25px;
+        }
+        #highlight_item_2 {
+          height: 10rem;
+          background-color: #f7f1f3;
+          width: 40vw;
+          min-width: 19rem;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border-radius: 25px;
+          margin-left: 5rem;
+        }
+        #highlight_value {
+          line-height: 0;
+          font-size: 2.5rem;
+          font-weight: 600;
+        }
+        #highlight_value_2 {
+          line-height: 1;
+          font-size: 2rem;
+          font-weight: 300;
+          text-align: center;
+        }
+      </style>
+    </section>
+    <div class="wrapper">
+      <section id="paragragh_section" class="container two_by_two">
+        <div class="left_section">
+          <h2 class="section_title primary_color">
+            Savoring Japan: Culinary Traditions and Delights
+          </h2>
+          <div class="section_description">
+            Japanese cuisine is a culinary marvel celebrated globally. Its
+            artful presentation and nuanced flavors are a testament to Japan's
+            rich cultural heritage. Dishes like sashimi, thinly sliced raw fish,
+            exemplify the purity of flavors. Tempura, with its light, crispy
+            coating, showcases mastery in frying techniques. Miso soup and soy
+            sauce contribute depth to meals. From the serene tea ceremonies to
+            the meticulous kaiseki meals, Japanese cuisine weaves tradition,
+            taste, and aesthetics into a sensory experience that captures the
+            essence of Japan's culinary mastery.
+          </div>
+        </div>
+        <style>
+          .section_description {
+            text-align: justify;
+            font-size: 1.8rem;
+            line-height: 40px;
+          }
+          #paragragh_section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 5rem;
+          }
+          .section_title {
+            font-size: 2.9rem;
+          }
+        </style>
+      </section>
+    </div>
+    <div class="wrapper">
+      <section id="paragragh_section" class="container two_by_two">
+        <div class="section">
+          <div class="section_description_left_text">
+            Japanese sushi, a global culinary treasure, showcases precision and
+            taste. This iconic dish combines vinegared rice, fresh seafood, and
+            vegetables with meticulous care. Nigiri features thinly sliced fish
+            atop bite-sized rice beds, while sashimi celebrates pure seafood
+            essence. Maki rolls are tightly wrapped parcels of rice, fish, and
+            vegetables. Wasabi and pickled ginger add piquant accents. With its
+            balanced flavors and aesthetic finesse, Japanese sushi stands as a
+            true culinary masterpiece.
+          </div>
+          <img src="../assets/cuisine/1.png" class="image_" />
+        </div>
+        <style>
+          .section_description_left_text {
+            padding-top: 2rem;
+            text-align: justify;
+            font-size: 1.8rem;
+            line-height: 40px;
+            width: 50%;
+            padding-right: 5rem;
+          }
+          .image_ {
+            width: 48%;
+          }
+          .section {
+            display: flex;
+            flex-direction: row;
+          }
+          #paragragh_section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 5rem;
+          }
+          .section_title {
+            font-size: 2.9rem;
+          }
+          .divider {
+            height: auto;
+            width: 3px;
+            background-color: #c5c5c5;
+          }
+        </style>
+      </section>
+    </div>
+    <div class="wrapper">
+      <section id="paragragh_section" class="container two_by_two">
+        <div class="section">
+          <img src="../assets/cuisine/2.png" class="image_" />
+          <div class="section_description_right_text">
+            Usuzukuri is a delicate Japanese culinary art, featuring raw fish
+            sliced into translucent, paper-thin pieces. These slices are
+            artfully arranged on a plate, often with a light ponzu sauce. The
+            dish highlights the natural freshness and subtle flavors of the
+            fish. Garnishes like grated radish and shiso leaves add nuanced
+            layers. With its emphasis on finesse and ingredient beauty,
+            Usuzukuri showcases the refined artistry of Japanese cuisine.
+          </div>
+        </div>
+        <style>
+          .section_description_right_text {
+            padding-top: 2rem;
+            text-align: justify;
+            font-size: 1.8rem;
+            line-height: 40px;
+            width: 50%;
+            padding-left: 5rem;
+          }
+          .image_ {
+            width: 48%;
+          }
+          .section {
+            display: flex;
+            flex-direction: row;
+          }
+          #paragragh_section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-top: 5rem;
+          }
+          .section_title {
+            font-size: 2.9rem;
+          }
+          .divider {
+            height: auto;
+            width: 3px;
+            background-color: #c5c5c5;
+          }
+        </style>
+      </section>
+    </div>
+
+    <div class="wrapper">
+      <section id="paragragh_section" class="container two_by_two">
+        <div class="section">
+          <div class="section_description_left_text">
+            Japanese food presentation is a captivating art form, blending
+            aesthetics, balance, and reverence for nature's bounty. From bento
+            boxes to meticulously plated sushi, each dish is a visual feast.
+            Kaiseki, a traditional multi-course meal, is a pinnacle of this art,
+            representing seasons and evoking a sensory journey. Street food
+            vendors also take pride in precise presentation, reflecting deep
+            respect for ingredients and diners. Japanese food is not only a
+            culinary delight but also a visual masterpiece.
+          </div>
+          <img src="../assets/cuisine/3.png" class="image_" />
+        </div>
+        <style>
+          .section_description_left_text {
+            padding-top: 2rem;
+            text-align: justify;
+            font-size: 1.8rem;
+            line-height: 40px;
+            width: 50%;
+            padding-right: 5rem;
+          }
+          .image_ {
+            width: 48%;
+          }
+          .section {
+            display: flex;
+            flex-direction: row;
+          }
+          #paragragh_section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 5rem;
+          }
+          .section_title {
+            font-size: 2.9rem;
+          }
+          .divider {
+            height: auto;
+            width: 3px;
+            background-color: #c5c5c5;
+          }
+        </style>
+      </section>
+    </div>
+
+    <div class="wrapper">
+      <section id="paragragh_section" class="container two_by_two">
+        <div class="section">
+          <img src="../assets/cuisine/4.png" class="image_" />
+          <div class="section_description_right_text">
+            Japanese chopsticks, or "hashi," are not just utensils, but
+            emblematic of dining culture. Crafted from wood or bamboo, they
+            offer precision and balance. Their tapered ends enable delicate
+            handling, reflecting Japanese finesse. Etiquette is crucial; never
+            stick them upright in rice, and avoid passing food between
+            chopsticks. Contemporary designs meld tradition with innovation.
+            Chopsticks symbolize mindful dining, an integral part of Japanese
+            culinary culture.
+          </div>
+        </div>
+        <style>
+          .section_description_right_text {
+            padding-top: 2rem;
+            text-align: justify;
+            font-size: 1.8rem;
+            line-height: 40px;
+            width: 50%;
+            padding-left: 5rem;
+          }
+          .image_ {
+            width: 48%;
+          }
+          .section {
+            display: flex;
+            flex-direction: row;
+          }
+          #paragragh_section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-top: 5rem;
+          }
+          .section_title {
+            font-size: 2.9rem;
+          }
+          .divider {
+            height: auto;
+            width: 3px;
+            background-color: #c5c5c5;
+          }
+        </style>
+      </section>
+    </div>
+    <h2 class="section_title primary_color center">
+      Nihon Bites: A Taste of Japan <br />
+      From Sushi to Soba, Culinary Adventures Await
+    </h2>
+    <div class="wrapper">
+      <div class="row self container">
+        <div class="point part point_part">
+          <div class="icon_div">
+            <img src="../assets/cuisine/icon-1.png" class="topic_image" />
+          </div>
+          <img src="../assets/cuisine/image-1.png" class="image" />
+          <p class="description">
+            Tsukimi dango is a delightful and distinctly Japanese treat, enjoyed
+            during the autumnal moon-viewing season. These small, round
+            dumplings are crafted from glutinous rice flour and often skewered
+            onto sticks, creating a charming presentation. What sets them apart
+            is their association with the moon, as "tsukimi" translates to
+            "moon-viewing." They're typically adorned with a sweet soy-based or
+            sweet miso glaze, adding a delectable touch. Tsukimi dango
+            exemplifies the cultural significance of appreciating nature's
+            beauty, making it not only a delicious treat but also a symbol of
+            Japan's deep connection with seasonal traditions.
+          </p>
+        </div>
+        <div class="point part point_part">
+          <div class="icon_div">
+            <img src="../assets/cuisine/icon-2.png" class="topic_image" />
+          </div>
+          <img src="../assets/cuisine/image-2.png" class="image" />
+          <p class="description">
+            Japanese organic products embody sustainable, quality-focused
+            agriculture. Cultivated with meticulous care, they shun synthetic
+            chemicals, favoring natural fertilizers. Crop rotation and companion
+            planting ensure soil health, yielding flavorsome, nutrient-rich
+            produce. From fruits to vegetables, teas, and grains, they showcase
+            the harmony between agriculture and the environment. In a world
+            valuing health and eco-consciousness, Japanese organic products
+            champion mindful consumption. Japanese organic products embody
+            sustainable, quality-focused agriculture, yielding flavorsome,
+            nutrient-rich produce.
+          </p>
+          <style>
+            .full_description {
+              margin-top: 0 !important;
+            }
+            .self {
+              align-self: center;
+              display: flex;
+            }
+            .row {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+            }
+            .full_part {
+              flex-direction: row;
+              display: flex;
+              justify-content: flex-start;
+              align-items: flex-end;
+            }
+            .all {
+              display: flex;
+              flex-direction: column;
+            }
+            .whole {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+            }
+            .part {
+              width: 42%;
+              /* margin-top: 5rem; */
+            }
+            .full {
+              width: 100% !important;
+            }
+            .full_image {
+              width: 30%;
+              margin-right: 3rem;
+            }
+            .point_part {
+              /* width: 80%; */
+              margin-top: 10rem;
+            }
+            .image {
+              width: 100%;
+              margin-top: 2rem;
+            }
+            .topic {
+              background-color: #d1f3da;
+              padding: 2rem;
+              align-items: center;
+              justify-content: center;
+              display: flex;
+              flex-direction: column;
+              border-radius: 1rem;
+              width: 25%;
+            }
+            .topic_title {
+              color: #7ec392;
+              font-size: 1.8rem;
+            }
+            .topic_subtitle {
+              font-size: 1.8rem;
+              font-weight: 300;
+              width: 70%;
+              text-align: center;
+            }
+            .topic_image {
+              width: 4rem;
+              height: 4rem;
+              object-fit: contain;
+            }
+            .icon_div {
+              background-color: #7ec392;
+              padding: 1.5rem;
+              border-radius: 4rem;
+              width: fit-content;
+              margin-top: -6rem;
+            }
+            .point {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              background-color: #ecfff1;
+              padding: 3rem;
+              border-radius: 2rem;
+              /* margin-top: 5rem; */
+              /* width: 100%; */
+              align-items: center;
+            }
+            .further {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+            }
+            .contact-div_contain {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              margin-top: 5rem;
+            }
+            .icon {
+              width: 5rem;
+              height: 5rem;
+            }
+            .contact-div-text {
+              font-size: 25px;
+              font-weight: 300;
+            }
+            .travel_title {
+              color: #7ec392;
+              font-size: 40px;
+              font-weight: 400;
+            }
+            .find {
+              margin-top: 5rem;
+            }
+            .details {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              margin-top: 5rem;
+            }
+            .description {
+              font-size: 1.8rem;
+              line-height: 40px;
+              font-weight: 300;
+              margin-top: 3rem;
+            }
+            .point_description {
+              font-size: 1.8rem;
+              line-height: 40px;
+              font-weight: 300;
+            }
+            .icon_image {
+              width: 2.5rem;
+              height: 2.5rem;
+              margin-right: 1rem;
+            }
+            .contact-div {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              margin-right: 5rem;
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+
+    <section class="footer">
+      <div class="links">
+        <a href="../pages/about.html"><h2 class="link">About Us</h2></a>
+        <a href="../pages/faq.html"> <h2 class="link">FAQ</h2></a>
+        <a href="../pages/contact.html"><h2 class="link">Contact Us</h2></a>
+      </div>
+      <div class="social">
+       <a href="https://www.instagram.com/" target="_blank">
+  <img class="icon" src="../assets/instgarm.png" alt="Instagram Icon">
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+  <img class="icon" src="../assets/youtube.png" alt="YouTube Icon">
+        </a>
+
+        <a href="https://www.facebook.com/" target="_blank">
+  <img class="icon" src="../assets/facebook.png" alt="Facebook Icon">
+        </a>
+        <h3 class="rights">2023, All rights reserved.</h3>
+      </div>
+      <style>
+        .footer {
+          background-image: url("../assets/footer.png");
+          height: 450px;
+          margin-top: 200px;
+          background-position: bottom left;
+          background-repeat: no-repeat;
+          background-size: cover;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding-left: 100px;
+          padding-top: 60px;
+          padding-bottom: 60px;
+        }
+        .links {
+          display: flex;
+          flex-direction: row;
+        }
+        .link {
+          font-size: 35px;
+          color: #7ec392;
+          margin-right: 40px;
+        }
+        .icon {
+          height: 2.5rem;
+          width: auto;
+          object-fit: contain;
+          margin-right: 40px;
+        }
+        .rights {
+          color: white;
+          margin-left: 27%;
+        }
+        .social {
+          display: flex;
+          flex-direction: row;
+        }
+      </style>
+    </section>
+  </body>
+</html>

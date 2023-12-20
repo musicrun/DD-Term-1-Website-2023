@@ -1,0 +1,406 @@
+<!DOCTYPE >
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        overflow-x: hidden;
+        background-color: #f7f1f3;
+      }
+
+      a:link,
+      a:visited,
+      a:hover,
+      a:active::after {
+        text-decoration: none;
+      }
+      a:link,
+      a:visited,
+      a:hover,
+      a:active {
+        text-decoration: none;
+      }
+      a:link,
+      a:visited,
+      a:hover,
+      a:active::before {
+        text-decoration: none;
+      }
+
+      header {
+        z-index: 100;
+      }
+
+      h1 {
+        font-size: 4.5rem;
+        color: white;
+      }
+
+      .container {
+        max-width: 1442px;
+      }
+
+      #banner {
+        height: 60vh;
+        width: 100vw;
+        z-index: 2;
+      }
+      #banner_image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      header {
+        position: absolute;
+        top: 0;
+        padding: 1.5rem;
+      }
+      #header_image {
+        height: auto;
+        width: 200px;
+        object-fit: cover;
+        border-width: 1px;
+        border-color: black;
+      }
+      #banner_content_body {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 60vh;
+        width: 100vw;
+        z-index: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .primary_color {
+        color: #7ec392;
+      }
+
+      .wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .two_by_two {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .left_section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .right_section {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-left: 50px;
+      }
+      @media screen and (max-width: 1024px) {
+      }
+    </style>
+  </head>
+  <body>
+    <div id="banner">
+      <header>
+        <a href="../index.html">
+          <img id="header_image" src="../assets/logo.png" alt="banner" />
+        </a>
+      </header>
+      <div id="banner_content_body">
+        <div id="banner_content">
+          <h1 class="text-center">Travel Tips</h1>
+        </div>
+      </div>
+      <img id="banner_image" src="../assets/travel/banner.png" alt="banner" />
+    </div>
+    <div class="wrapper">
+      <section id="paragragh_section" class="container further">
+        <div class="whole">
+          <div class="whole">
+            <div class="part">
+              <div class="point point_part">
+                <div class="icon_div">
+                  <img src="../assets/travel/car.png" class="topic_image" />
+                </div>
+                <p class="description">
+                  Taxis in Japan offer reliable, convenient transportation known
+                  for impeccable service and well-maintained vehicles. Drivers
+                  are highly professional and well-versed in local routes,
+                  ensuring a safe and comfortable ride. Though fares can be
+                  higher, they provide a stress-free option, particularly for
+                  those with luggage or unfamiliarity with the area. Japanese
+                  taxis strictly adhere to traffic rules, ensuring a smooth and
+                  secure travel experience for all.
+                </p>
+              </div>
+              <div class="point point_part">
+                <div class="icon_div">
+                  <img src="../assets/travel/house.png" class="topic_image" />
+                </div>
+                <p class="description">
+                  Japan's transportation system is renowned for its punctuality,
+                  efficiency, and extensive rail network, making it a breeze to
+                  explore the country but make sure to use the manner that meets
+                  your reqirments with the least cost !
+                </p>
+              </div>
+            </div>
+            <div class="point part point_part">
+              <div class="icon_div">
+                <img src="../assets/travel/bag.png" class="topic_image" />
+              </div>
+              <img src="../assets/travel/image-1.png" class="image" />
+              <p class="description">
+                Narita International Airport, east of Tokyo, seamlessly blends
+                modernity with tradition. Its efficient services, including
+                swift baggage handling and immigration, ensure a smooth journey.
+                The airport also offers a rich cultural experience with Japanese
+                art installations and serene gardens. With diverse dining,
+                shopping, and relaxation options, Narita caters to all traveler
+                needs. This unique fusion of convenience and cultural richness
+                makes Narita International Airport a standout entry point into
+                Japan.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="point part point_part full">
+          <div class="icon_div">
+            <img src="../assets/travel/train.png" class="topic_image" />
+          </div>
+          <div class="full_part">
+            <img src="../assets/travel/image-2.png" class="full_image" />
+            <p class="description full_description">
+              Japan's rail system, operated by JR, is a global model of
+              efficiency. The iconic Shinkansen, or bullet trains, exemplify
+              this, offering remarkable speed, punctuality, safety, and comfort.
+              Complemented by local and express services, Japan's rail network
+              ensures seamless connectivity for all travelers, showcasing the
+              nation's commitment to excellence in transportation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <style>
+        .full_description {
+          margin-top: 0 !important;
+        }
+        .full_part {
+          flex-direction: row;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-end;
+        }
+        .all {
+          display: flex;
+          flex-direction: column;
+        }
+        .whole {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        .part {
+          width: 45%;
+          /* margin-top: 5rem; */
+        }
+        .full {
+          width: 100% !important;
+        }
+        .full_image {
+          width: 30%;
+          margin-right: 3rem;
+        }
+        .point_part {
+          /* width: 80%; */
+          margin-top: 10rem;
+        }
+        .image {
+          width: 100%;
+        }
+        .topic {
+          background-color: #d1f3da;
+          padding: 2rem;
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          flex-direction: column;
+          border-radius: 1rem;
+          width: 25%;
+        }
+        .topic_title {
+          color: #7ec392;
+          font-size: 1.8rem;
+        }
+        .topic_subtitle {
+          font-size: 1.8rem;
+          font-weight: 300;
+          width: 70%;
+          text-align: center;
+        }
+        .topic_image {
+          width: 4rem;
+          height: 4rem;
+          object-fit: contain;
+        }
+        .icon_div {
+          background-color: #7ec392;
+          padding: 1.5rem;
+          border-radius: 4rem;
+          width: fit-content;
+          margin-top: -6rem;
+        }
+        .point {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          background-color: #ecfff1;
+          padding: 3rem;
+          border-radius: 2rem;
+          /* margin-top: 5rem; */
+          /* width: 100%; */
+          align-items: center;
+        }
+        .further {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        .contact-div_contain {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          margin-top: 5rem;
+        }
+        .icon {
+          width: 5rem;
+          height: 5rem;
+        }
+        .contact-div-text {
+          font-size: 25px;
+          font-weight: 300;
+        }
+        .travel_title {
+          color: #7ec392;
+          font-size: 40px;
+          font-weight: 400;
+        }
+        .find {
+          margin-top: 5rem;
+        }
+        .details {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          margin-top: 5rem;
+        }
+        .description {
+          font-size: 1.8rem;
+          line-height: 40px;
+          font-weight: 300;
+          margin-top: 3rem;
+        }
+        .point_description {
+          font-size: 1.8rem;
+          line-height: 40px;
+          font-weight: 300;
+        }
+        .icon_image {
+          width: 2.5rem;
+          height: 2.5rem;
+          margin-right: 1rem;
+        }
+        .contact-div {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-right: 5rem;
+        }
+      </style>
+    </div>
+    <section class="footer">
+      <div class="links">
+        <a href="../pages/about.html"><h2 class="link">About Us</h2></a>
+        <a href="../pages/faq.html"> <h2 class="link">FAQ</h2></a>
+        <a href="../pages/contact.html"><h2 class="link">Contact Us</h2></a>
+      </div>
+      <div class="social">
+        <a href="https://www.instagram.com/" target="_blank">
+  <img class="icon" src="../assets/instgarm.png" alt="Instagram Icon">
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+  <img class="icon" src="../assets/youtube.png" alt="YouTube Icon">
+        </a>
+
+        <a href="https://www.facebook.com/" target="_blank">
+  <img class="icon" src="../assets/facebook.png" alt="Facebook Icon">
+        </a>
+        <h3 class="rights">2023, All rights reserved.</h3>
+      </div>
+
+      <style>
+        .footer {
+          background-image: url("../assets/footer.png");
+          height: 450px;
+          margin-top: 200px;
+          background-position: bottom left;
+          background-repeat: no-repeat;
+          background-size: cover;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding-left: 100px;
+          padding-top: 60px;
+          padding-bottom: 60px;
+        }
+        .links {
+          display: flex;
+          flex-direction: row;
+        }
+        .link {
+          font-size: 35px;
+          color: #7ec392;
+          margin-right: 40px;
+        }
+        .icon {
+          height: 2.5rem;
+          width: auto;
+          object-fit: contain;
+          margin-right: 40px;
+        }
+        .rights {
+          color: white;
+          margin-left: 27%;
+        }
+        .social {
+          display: flex;
+          flex-direction: row;
+        }
+      </style>
+    </section>
+  </body>
+</html>
